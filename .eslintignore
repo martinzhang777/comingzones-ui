@@ -1,0 +1,6 @@
+# *.js
+node_modules/**
+src/**/*.js
+public
+# !src/**/mock.js
+!src/shims-vue.d.ts
