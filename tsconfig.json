@@ -18,7 +18,10 @@
     "paths": {
       "~/*": [
         "packages/*"
-      ]
+      ],
+      "@/*": [
+        "packages/*"
+      ],
     },
     "lib": [
       "esnext",

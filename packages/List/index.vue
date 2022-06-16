@@ -178,6 +178,11 @@ function setSkeleton(el: HTMLElement, binding: any) {
 
 export default defineComponent({
   name: "FList",
+  components: {
+    "van-field": Field,
+    "van-popup": Popup,
+    "van-datetime-picker": DatetimePicker,
+  },
   directives: {
     skeleton: {
       mounted: setSkeleton,
