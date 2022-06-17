@@ -44,12 +44,14 @@
 </style>
 <template>
   <div class="page base-page">
+    <!-- 日期 -->
     <f-date
       :type="'date'"
       label="请选择年月日"
       v-model:value="state.currentDate"
     ></f-date>
     <div class="page-content">
+      <!-- 下拉刷新 -->
       <f-list ref="list" :source="dataSource" :pagination="false" first>
         <template v-slot="{ items }">
           <div class="products">

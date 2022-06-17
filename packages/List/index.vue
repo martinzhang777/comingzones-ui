@@ -158,6 +158,7 @@
 <script lang="ts">
 import { useList } from "@/hooks";
 import { computed, defineComponent } from "@vue/runtime-core";
+import { PullRefresh, List, Empty, Loading, Divider, Skeleton } from "vant";
 
 function findParent(el: HTMLElement): HTMLElement | null {
   if (el.parentElement?.classList.contains("f-list-container")) {
@@ -179,9 +180,12 @@ function setSkeleton(el: HTMLElement, binding: any) {
 export default defineComponent({
   name: "FList",
   components: {
-    "van-field": Field,
-    "van-popup": Popup,
-    "van-datetime-picker": DatetimePicker,
+    "van-pull-refresh": PullRefresh,
+    "van-list": List,
+    "van-empty": Empty,
+    "van-loading": Loading,
+    "van-divider": Divider,
+    "van-skeleton": Skeleton,
   },
   directives: {
     skeleton: {
